@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transform</title>
     <style>
-        .main{
+        .main {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -13,7 +14,8 @@
             width: 100vw;
             height: 100vh;
         }
-        .cont{
+
+        .cont {
             flex-wrap: wrap;
             display: flex;
             align-items: center;
@@ -23,7 +25,9 @@
             width: 50vw;
             height: 80vh;
         }
-        .item-1{
+
+        .item-1 {
+            background-color: blue;
             color: black;
             display: flex;
             justify-content: center;
@@ -32,97 +36,107 @@
             height: 100px;
             border: 2px solid white;
         }
-        .tran-x:hover{
+
+        .tran-x:hover {
             background-color: aqua;
             transition-property: transform;
-            transition-duration:1s ;
-            transition-timing-function:ease-in ;
-            transition-delay:0s ;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 0s;
             transform: translateX(100px);
         }
-        .tran-y:hover{
+
+        .tran-y:hover {
             background-color: aqua;
             transition-property: transform;
-            transition-duration:1s ;
-            transition-timing-function:ease-in ;
-            transition-delay:0s ;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 0s;
             transform: translateY(100px);
         }
-        .rot:hover{
+
+        .rot:hover {
             background-color: aqua;
             transition-property: transform;
-            transition-duration:1s ;
-            transition-timing-function:ease-in ;
-            transition-delay:0s ;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 0s;
             transform: rotate(360deg)
         }
-        .tran-3d:hover{
+
+        .tran-3d:hover {
             background-color: aqua;
             transition-property: transform;
-            transition-duration:1s ;
-            transition-timing-function:ease-in ;
-            transition-delay:0s ;
-            transform: translate3d(100px,100px,100px)
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 0s;
+            transform: translate3d(100px, 100px, 100px)
         }
-        .rot-x:hover{
+
+        .rot-x:hover {
             background-color: aqua;
             transition-property: transform;
-            transition-duration:1s ;
-            transition-timing-function:ease-in ;
-            transition-delay:0s ;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 0s;
             transform: rotateX(360deg)
         }
-        .rot-y:hover{
+
+        .rot-y:hover {
             background-color: aqua;
             transition-property: transform;
-            transition-duration:1s ;
-            transition-timing-function:ease-in ;
-            transition-delay:0s ;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 0s;
             transform: rotateY(360deg)
         }
 
-        .scale-x:hover{
+        .scale-x:hover {
             background-color: aqua;
             transition-property: transform;
-            transition-duration:1s ;
-            transition-timing-function:ease-in ;
-            transition-delay:0s ;
-            transform:scale(1.5);
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 0s;
+            transform: scale(1.5);
 
         }
-        .mat:hover{
+
+        .mat:hover {
             background-color: aqua;
             transition-property: transform;
-            transition-duration:1s ;
-            transition-timing-function:ease-in ;
-            transition-delay:0s ;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 0s;
             transform: matrix(1, 2, 1, 4, 1, 1);
 
         }
-        
-        .mat-3d:hover{
-            background-color: aqua;
-            transition-property: transform;
-            transition-duration:1s ;
-            transition-timing-function:ease-in ;
-            transition-delay:0s ;
-            transform: matrix3d(1, 2, 1, 1, 1, 1, 1, 1, 2, 2, 1, 2, 3, 4, 2, 1);
 
-        }
-        
-        .skw:hover{
+        .mat-3d:hover {
             background-color: aqua;
             transition-property: transform;
-            transition-duration:1s ;
-            transition-timing-function:ease-in ;
-            transition-delay:0s ;
-            transform: skew(20deg,20deg);
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 0s;
+            transform: matrix3d(1, 0, 0, 0,
+                    0, 0.866025, 0.5, 0,
+                    0, -0.5, 0.866025, 0,
+                    0, 0, 0, 1);
+
 
         }
 
+        .skw:hover {
+            background-color: aqua;
+            transition-property: transform;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 0s;
+            transform: skew(20deg, 20deg);
 
+        }
     </style>
 </head>
+
 <body>
     <div class="main">
         <div class="cont">
@@ -140,4 +154,5 @@
         </div>
     </div>
 </body>
+
 </html>
