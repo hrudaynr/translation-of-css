@@ -24,7 +24,6 @@
             height: 80vh;
         }
         .item-1{
-            background-color: blueviolet;
             color: black;
             display: flex;
             justify-content: center;
@@ -82,6 +81,44 @@
             transform: rotateY(360deg)
         }
 
+        .scale-x:hover{
+            background-color: aqua;
+            transition-property: transform;
+            transition-duration:1s ;
+            transition-timing-function:ease-in ;
+            transition-delay:0s ;
+            transform:scale(1.5);
+
+        }
+        .mat:hover{
+            background-color: aqua;
+            transition-property: transform;
+            transition-duration:1s ;
+            transition-timing-function:ease-in ;
+            transition-delay:0s ;
+            transform: matrix(1, 2, 1, 4, 1, 1);
+
+        }
+        
+        .mat-3d:hover{
+            background-color: aqua;
+            transition-property: transform;
+            transition-duration:1s ;
+            transition-timing-function:ease-in ;
+            transition-delay:0s ;
+            transform: matrix3d(1, 2, 1, 1, 1, 1, 1, 1, 2, 2, 1, 2, 3, 4, 2, 1);
+
+        }
+        
+        .skw:hover{
+            background-color: aqua;
+            transition-property: transform;
+            transition-duration:1s ;
+            transition-timing-function:ease-in ;
+            transition-delay:0s ;
+            transform: skew(20deg,20deg);
+
+        }
 
 
     </style>
@@ -95,6 +132,10 @@
             <div class="item-1 rot">rotate(350 deg)</div>
             <div class="item-1 rot-x">Rotate-x(360)</div>
             <div class="item-1 rot-y">Rotate-y(360)</div>
+            <div class="item-1 scale-x">scale-x</div>
+            <div class="item-1 mat">matrix</div>
+            <div class="item-1 skw">skwe</div>
+            <div class="item-1 mat-3d">matrix-3d</div>
 
         </div>
     </div>
