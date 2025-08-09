@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            width: 100vw;
+            height: 100vh;
+        }
+        .cont{
+            flex-wrap: wrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            border: 2px solid wheat;
+            width: 50vw;
+            height: 80vh;
+        }
+        .item-1{
+            background-color: blueviolet;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 100px;
+            border: 2px solid white;
+        }
+        .tran-x:hover{
+            background-color: aqua;
+            transition-property: transform;
+            transition-duration:1s ;
+            transition-timing-function:ease-in ;
+            transition-delay:0s ;
+            transform: translateX(100px);
+        }
+        .tran-y:hover{
+            background-color: aqua;
+            transition-property: transform;
+            transition-duration:1s ;
+            transition-timing-function:ease-in ;
+            transition-delay:0s ;
+            transform: translateY(100px);
+        }
+        .rot:hover{
+            background-color: aqua;
+            transition-property: transform;
+            transition-duration:1s ;
+            transition-timing-function:ease-in ;
+            transition-delay:0s ;
+            transform: rotate(360deg)
+        }
+        .tran-3d:hover{
+            background-color: aqua;
+            transition-property: transform;
+            transition-duration:1s ;
+            transition-timing-function:ease-in ;
+            transition-delay:0s ;
+            transform: translate3d(100px,100px,100px)
+        }
+        .rot-x:hover{
+            background-color: aqua;
+            transition-property: transform;
+            transition-duration:1s ;
+            transition-timing-function:ease-in ;
+            transition-delay:0s ;
+            transform: rotateX(360deg)
+        }
+        .rot-y:hover{
+            background-color: aqua;
+            transition-property: transform;
+            transition-duration:1s ;
+            transition-timing-function:ease-in ;
+            transition-delay:0s ;
+            transform: rotateY(360deg)
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="cont">
+            <div class="item-1 tran-x">Transform-X</div>
+            <div class="item-1 tran-y">Transform-Y</div>
+            <div class="item-1 tran-3d">transform-3d</div>
+            <div class="item-1 rot">rotate(350 deg)</div>
+            <div class="item-1 rot-x">Rotate-x(360)</div>
+            <div class="item-1 rot-y">Rotate-y(360)</div>
+
+        </div>
+    </div>
+</body>
+</html>
